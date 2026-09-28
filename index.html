@@ -14,14 +14,14 @@
     <meta name="author"
           content="Rishika R Poojary">
 
-    <title>Rishika R Poojary | Portfolio</title>
+    <title>Rishika R Poojary | Computer Science Engineering</title>
 
 
     <style>
 
-        /* =========================
+        /* =========================================
            GLOBAL
-        ========================= */
+        ========================================= */
 
         * {
             margin: 0;
@@ -44,524 +44,369 @@
                 sans-serif;
 
             background: #070b14;
-
             color: #f8fafc;
-
             line-height: 1.6;
         }
 
         a {
-            text-decoration: none;
             color: inherit;
+            text-decoration: none;
         }
 
         :root {
-
-            --bg: #070b14;
-
-            --bg2: #0d1321;
-
+            --background: #070b14;
+            --background2: #0d1321;
             --card: #101827;
+            --card-hover: #141e2f;
 
-            --card2: #141e2f;
-
-            --blue: #3b82f6;
-
-            --blue-light: #60a5fa;
+            --primary: #3b82f6;
+            --primary-light: #60a5fa;
 
             --text: #f8fafc;
-
+            --text-secondary: #cbd5e1;
             --muted: #94a3b8;
 
-            --border:
-                rgba(148, 163, 184, 0.15);
+            --border: rgba(148, 163, 184, 0.15);
 
-            --max: 1150px;
+            --max-width: 1150px;
         }
 
 
-        /* =========================
-           NAVBAR
-        ========================= */
+        /* =========================================
+           NAVIGATION
+        ========================================= */
 
         nav {
-
             position: fixed;
-
             top: 0;
-
             left: 0;
-
             width: 100%;
 
             z-index: 1000;
 
             background:
-                rgba(7, 11, 20, 0.78);
+                rgba(7, 11, 20, 0.82);
 
-            backdrop-filter:
-                blur(18px);
+            backdrop-filter: blur(18px);
 
             border-bottom:
                 1px solid var(--border);
         }
 
-        .nav {
-
-            max-width: var(--max);
-
+        .nav-container {
+            max-width: var(--max-width);
             margin: auto;
 
-            padding:
-                18px 25px;
+            padding: 18px 25px;
 
             display: flex;
-
-            justify-content:
-                space-between;
-
+            justify-content: space-between;
             align-items: center;
         }
 
         .logo {
-
             font-size: 21px;
-
             font-weight: 800;
-
-            letter-spacing:
-                -0.5px;
+            letter-spacing: -0.5px;
         }
 
         .logo span {
-            color: var(--blue-light);
+            color: var(--primary-light);
         }
 
         .nav-links {
-
             display: flex;
-
-            gap: 30px;
-
+            gap: 28px;
             list-style: none;
         }
 
         .nav-links a {
-
-            color: #cbd5e1;
-
+            color: var(--text-secondary);
             font-size: 14px;
-
             font-weight: 600;
 
-            transition:
-                0.3s ease;
+            transition: 0.3s ease;
         }
 
         .nav-links a:hover {
-
-            color:
-                var(--blue-light);
+            color: var(--primary-light);
         }
 
 
-        /* =========================
+        /* =========================================
            HERO
-        ========================= */
+        ========================================= */
 
         .hero {
+            min-height: 100vh;
 
-            min-height:
-                100vh;
+            display: flex;
+            align-items: center;
 
-            display:
-                flex;
-
-            align-items:
-                center;
-
-            position:
-                relative;
-
-            overflow:
-                hidden;
+            position: relative;
+            overflow: hidden;
 
             padding:
                 130px 25px 80px;
         }
 
         .hero::before {
-
             content: "";
 
-            position:
-                absolute;
+            position: absolute;
 
-            width:
-                550px;
+            width: 550px;
+            height: 550px;
 
-            height:
-                550px;
-
-            left:
-                -220px;
-
-            top:
-                80px;
+            left: -220px;
+            top: 50px;
 
             background:
-                rgba(59, 130, 246, 0.13);
+                rgba(59, 130, 246, 0.14);
 
-            filter:
-                blur(110px);
+            filter: blur(120px);
 
-            border-radius:
-                50%;
+            border-radius: 50%;
         }
 
         .hero::after {
-
             content: "";
 
-            position:
-                absolute;
+            position: absolute;
 
-            width:
-                450px;
+            width: 450px;
+            height: 450px;
 
-            height:
-                450px;
-
-            right:
-                -180px;
-
-            bottom:
-                -150px;
+            right: -180px;
+            bottom: -150px;
 
             background:
                 rgba(96, 165, 250, 0.10);
 
-            filter:
-                blur(100px);
+            filter: blur(110px);
 
-            border-radius:
-                50%;
+            border-radius: 50%;
         }
 
         .hero-container {
+            max-width: var(--max-width);
+            width: 100%;
 
-            max-width:
-                var(--max);
+            margin: auto;
 
-            width:
-                100%;
-
-            margin:
-                auto;
-
-            position:
-                relative;
-
-            z-index:
-                2;
+            position: relative;
+            z-index: 2;
         }
 
         .hero-content {
-
-            max-width:
-                850px;
+            max-width: 850px;
         }
 
-        .badge {
+        .availability {
+            display: inline-flex;
 
-            display:
-                inline-flex;
-
-            align-items:
-                center;
-
-            gap:
-                8px;
+            align-items: center;
+            gap: 8px;
 
             padding:
                 7px 14px;
 
+            margin-bottom: 25px;
+
             border:
                 1px solid
-                rgba(96,165,250,0.25);
+                rgba(96, 165, 250, 0.25);
 
             background:
-                rgba(96,165,250,0.08);
+                rgba(96, 165, 250, 0.08);
 
-            border-radius:
-                50px;
+            border-radius: 50px;
 
-            color:
-                var(--blue-light);
+            color: var(--primary-light);
 
-            font-size:
-                13px;
-
-            font-weight:
-                700;
-
-            margin-bottom:
-                25px;
+            font-size: 13px;
+            font-weight: 700;
         }
 
-        .dot {
+        .status-dot {
+            width: 7px;
+            height: 7px;
 
-            width:
-                7px;
+            background: #22c55e;
 
-            height:
-                7px;
-
-            background:
-                #22c55e;
-
-            border-radius:
-                50%;
+            border-radius: 50%;
         }
 
         .hero h1 {
-
             font-size:
-                clamp(46px, 7vw, 78px);
+                clamp(45px, 7vw, 78px);
 
-            line-height:
-                1.02;
+            line-height: 1.03;
 
-            letter-spacing:
-                -4px;
+            letter-spacing: -4px;
 
-            margin-bottom:
-                22px;
+            margin-bottom: 20px;
         }
 
         .hero h1 span {
-
-            color:
-                var(--blue-light);
+            color: var(--primary-light);
         }
 
         .hero h2 {
-
             font-size:
                 clamp(20px, 3vw, 29px);
 
-            font-weight:
-                500;
+            font-weight: 500;
 
-            color:
-                #cbd5e1;
+            color: var(--text-secondary);
 
-            margin-bottom:
-                25px;
+            margin-bottom: 25px;
         }
 
-        .hero-text {
+        .hero-description {
+            max-width: 750px;
 
-            max-width:
-                720px;
+            color: var(--muted);
 
-            color:
-                var(--muted);
+            font-size: 18px;
 
-            font-size:
-                18px;
-
-            margin-bottom:
-                35px;
+            margin-bottom: 35px;
         }
 
-        .buttons {
-
-            display:
-                flex;
-
-            flex-wrap:
-                wrap;
-
-            gap:
-                14px;
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 13px;
         }
 
-        .btn {
+        .button {
+            display: inline-flex;
 
-            display:
-                inline-flex;
-
-            align-items:
-                center;
-
-            justify-content:
-                center;
+            align-items: center;
+            justify-content: center;
 
             padding:
                 13px 22px;
 
-            border-radius:
-                8px;
+            border-radius: 8px;
 
-            font-size:
-                14px;
+            font-size: 14px;
+            font-weight: 700;
 
-            font-weight:
-                700;
-
-            transition:
-                0.3s ease;
+            transition: 0.3s ease;
         }
 
-        .primary {
-
-            background:
-                var(--blue);
-
-            color:
-                white;
+        .primary-button {
+            background: var(--primary);
+            color: white;
         }
 
-        .primary:hover {
+        .primary-button:hover {
+            background: #2563eb;
 
             transform:
                 translateY(-3px);
 
-            background:
-                #2563eb;
-
             box-shadow:
                 0 15px 35px
-                rgba(37,99,235,0.25);
+                rgba(37, 99, 235, 0.25);
         }
 
-        .secondary {
+        .secondary-button {
+            background:
+                rgba(255,255,255,0.03);
 
             border:
                 1px solid var(--border);
 
-            background:
-                rgba(255,255,255,0.03);
-
             color:
-                #cbd5e1;
+                var(--text-secondary);
         }
 
-        .secondary:hover {
-
-            transform:
-                translateY(-3px);
-
+        .secondary-button:hover {
             border-color:
                 rgba(96,165,250,0.4);
 
             color:
-                var(--blue-light);
+                var(--primary-light);
+
+            transform:
+                translateY(-3px);
         }
 
 
-        /* =========================
-           SECTIONS
-        ========================= */
+        /* =========================================
+           COMMON SECTIONS
+        ========================================= */
 
         section {
-
             padding:
                 100px 25px;
         }
 
         .container {
-
-            max-width:
-                var(--max);
-
-            margin:
-                auto;
+            max-width: var(--max-width);
+            margin: auto;
         }
 
         .section-header {
-
-            margin-bottom:
-                50px;
+            margin-bottom: 50px;
         }
 
         .section-label {
+            color: var(--primary-light);
 
-            color:
-                var(--blue-light);
+            text-transform: uppercase;
 
-            text-transform:
-                uppercase;
+            letter-spacing: 2px;
 
-            letter-spacing:
-                2px;
+            font-size: 12px;
 
-            font-size:
-                12px;
+            font-weight: 800;
 
-            font-weight:
-                800;
-
-            margin-bottom:
-                10px;
+            margin-bottom: 10px;
         }
 
         .section-header h2 {
-
             font-size:
                 clamp(30px, 5vw, 42px);
 
-            letter-spacing:
-                -1.5px;
+            letter-spacing: -1.5px;
         }
 
         .section-header p {
+            max-width: 700px;
 
-            max-width:
-                650px;
+            color: var(--muted);
 
-            color:
-                var(--muted);
-
-            margin-top:
-                10px;
+            margin-top: 10px;
         }
 
 
-        /* =========================
+        /* =========================================
            ABOUT
-        ========================= */
+        ========================================= */
 
         .about-grid {
-
-            display:
-                grid;
+            display: grid;
 
             grid-template-columns:
-                1.2fr 0.8fr;
+                1.25fr 0.75fr;
 
-            gap:
-                60px;
+            gap: 60px;
 
-            align-items:
-                center;
+            align-items: center;
         }
 
         .about-text p {
+            color: var(--text-secondary);
 
-            color:
-                #cbd5e1;
+            font-size: 17px;
 
-            font-size:
-                17px;
-
-            margin-bottom:
-                20px;
+            margin-bottom: 20px;
         }
 
-        .info-card {
-
+        .profile-card {
             background:
                 linear-gradient(
                     145deg,
@@ -572,15 +417,12 @@
             border:
                 1px solid var(--border);
 
-            border-radius:
-                16px;
+            border-radius: 16px;
 
-            padding:
-                30px;
+            padding: 30px;
         }
 
-        .info {
-
+        .profile-item {
             padding:
                 17px 0;
 
@@ -588,57 +430,54 @@
                 1px solid var(--border);
         }
 
-        .info:last-child {
-
-            border-bottom:
-                none;
+        .profile-item:last-child {
+            border-bottom: none;
         }
 
-        .info small {
+        .profile-item small {
+            display: block;
 
-            display:
-                block;
+            color: var(--muted);
 
-            color:
-                var(--muted);
+            font-size: 12px;
 
-            font-size:
-                12px;
-
-            margin-bottom:
-                4px;
+            margin-bottom: 4px;
         }
 
-        .info strong {
+        .profile-item strong {
+            color: var(--text);
 
-            color:
-                #f8fafc;
-
-            font-size:
-                15px;
+            font-size: 15px;
         }
 
 
-        /* =========================
+        /* =========================================
            SKILLS
-        ========================= */
+        ========================================= */
+
+        .skill-category {
+            margin-bottom: 40px;
+        }
+
+        .skill-category h3 {
+            font-size: 18px;
+
+            margin-bottom: 18px;
+
+            color: var(--text-secondary);
+        }
 
         .skills {
+            display: flex;
 
-            display:
-                grid;
+            flex-wrap: wrap;
 
-            grid-template-columns:
-                repeat(
-                    auto-fit,
-                    minmax(180px, 1fr)
-                );
-
-            gap:
-                15px;
+            gap: 12px;
         }
 
         .skill {
+            padding:
+                10px 16px;
 
             background:
                 var(--card);
@@ -646,61 +485,39 @@
             border:
                 1px solid var(--border);
 
-            border-radius:
-                12px;
+            border-radius: 7px;
 
-            padding:
-                22px;
+            color:
+                var(--text-secondary);
 
-            transition:
-                0.3s ease;
+            font-size: 14px;
+
+            font-weight: 600;
+
+            transition: 0.3s ease;
         }
 
         .skill:hover {
-
-            transform:
-                translateY(-5px);
-
             background:
-                var(--card2);
+                var(--card-hover);
 
             border-color:
                 rgba(96,165,250,0.35);
-        }
-
-        .skill-title {
-
-            font-weight:
-                700;
 
             color:
-                #e2e8f0;
-        }
+                var(--primary-light);
 
-        .skill-type {
-
-            display:
-                block;
-
-            margin-top:
-                5px;
-
-            color:
-                var(--muted);
-
-            font-size:
-                12px;
+            transform:
+                translateY(-3px);
         }
 
 
-        /* =========================
+        /* =========================================
            PROJECTS
-        ========================= */
+        ========================================= */
 
         .projects {
-
-            display:
-                grid;
+            display: grid;
 
             grid-template-columns:
                 repeat(
@@ -708,53 +525,36 @@
                     minmax(300px, 1fr)
                 );
 
-            gap:
-                25px;
+            gap: 25px;
         }
 
         .project {
+            position: relative;
 
-            position:
-                relative;
-
-            background:
-                var(--card);
+            background: var(--card);
 
             border:
                 1px solid var(--border);
 
-            border-radius:
-                16px;
+            border-radius: 16px;
 
-            padding:
-                30px;
+            padding: 30px;
 
-            overflow:
-                hidden;
+            overflow: hidden;
 
-            transition:
-                0.3s ease;
+            transition: 0.3s ease;
         }
 
         .project::before {
+            content: "";
 
-            content:
-                "";
+            position: absolute;
 
-            position:
-                absolute;
+            top: 0;
+            left: 0;
 
-            top:
-                0;
-
-            left:
-                0;
-
-            width:
-                100%;
-
-            height:
-                3px;
+            width: 100%;
+            height: 3px;
 
             background:
                 linear-gradient(
@@ -765,9 +565,8 @@
         }
 
         .project:hover {
-
             transform:
-                translateY(-8px);
+                translateY(-7px);
 
             border-color:
                 rgba(96,165,250,0.35);
@@ -777,61 +576,44 @@
                 rgba(0,0,0,0.25);
         }
 
-        .project-number {
-
+        .project-year {
             color:
-                var(--blue-light);
+                var(--primary-light);
 
-            font-size:
-                12px;
+            font-size: 12px;
 
-            font-weight:
-                800;
+            font-weight: 800;
 
-            letter-spacing:
-                1px;
+            letter-spacing: 1px;
 
-            margin-bottom:
-                18px;
+            margin-bottom: 14px;
         }
 
         .project h3 {
+            font-size: 21px;
 
-            font-size:
-                22px;
-
-            margin-bottom:
-                12px;
+            margin-bottom: 13px;
         }
 
         .project p {
+            color: var(--muted);
 
-            color:
-                var(--muted);
+            font-size: 15px;
 
-            font-size:
-                15px;
-
-            margin-bottom:
-                20px;
+            margin-bottom: 20px;
         }
 
         .tags {
+            display: flex;
 
-            display:
-                flex;
+            flex-wrap: wrap;
 
-            flex-wrap:
-                wrap;
-
-            gap:
-                8px;
+            gap: 7px;
         }
 
         .tag {
-
             padding:
-                5px 10px;
+                5px 9px;
 
             background:
                 rgba(96,165,250,0.08);
@@ -840,38 +622,31 @@
                 1px solid
                 rgba(96,165,250,0.15);
 
-            border-radius:
-                5px;
+            border-radius: 5px;
 
             color:
                 #93c5fd;
 
-            font-size:
-                11px;
+            font-size: 11px;
 
-            font-weight:
-                700;
+            font-weight: 700;
         }
 
 
-        /* =========================
+        /* =========================================
            EDUCATION
-        ========================= */
+        ========================================= */
 
         .timeline {
-
             border-left:
                 2px solid
                 rgba(96,165,250,0.25);
 
-            padding-left:
-                30px;
+            padding-left: 30px;
         }
 
         .education-card {
-
-            position:
-                relative;
+            position: relative;
 
             background:
                 var(--card);
@@ -879,83 +654,177 @@
             border:
                 1px solid var(--border);
 
-            border-radius:
-                14px;
+            border-radius: 14px;
 
-            padding:
-                28px;
+            padding: 28px;
 
-            margin-bottom:
-                25px;
+            margin-bottom: 25px;
         }
 
         .education-card::before {
+            content: "";
 
-            content:
-                "";
+            position: absolute;
 
-            position:
-                absolute;
-
-            width:
-                12px;
-
-            height:
-                12px;
+            width: 12px;
+            height: 12px;
 
             background:
-                var(--blue-light);
+                var(--primary-light);
 
-            border-radius:
-                50%;
+            border-radius: 50%;
 
-            left:
-                -37px;
-
-            top:
-                32px;
+            left: -37px;
+            top: 32px;
 
             box-shadow:
-                0 0 0 5px var(--bg);
+                0 0 0 5px
+                var(--background);
         }
 
         .education-date {
-
             color:
-                var(--blue-light);
+                var(--primary-light);
 
-            font-size:
-                13px;
+            font-size: 13px;
 
-            font-weight:
-                700;
+            font-weight: 700;
 
-            margin-bottom:
-                6px;
+            margin-bottom: 7px;
         }
 
         .education-card h3 {
+            font-size: 21px;
 
-            font-size:
-                21px;
-
-            margin-bottom:
-                5px;
+            margin-bottom: 6px;
         }
 
         .education-card p {
-
             color:
                 var(--muted);
         }
 
 
-        /* =========================
+        /* =========================================
+           CERTIFICATIONS
+        ========================================= */
+
+        .certifications {
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    auto-fit,
+                    minmax(280px, 1fr)
+                );
+
+            gap: 18px;
+        }
+
+        .certification {
+            background:
+                var(--card);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 12px;
+
+            padding: 24px;
+
+            transition: 0.3s ease;
+        }
+
+        .certification:hover {
+            transform:
+                translateY(-5px);
+
+            border-color:
+                rgba(96,165,250,0.35);
+        }
+
+        .certification-icon {
+            font-size: 24px;
+
+            margin-bottom: 15px;
+        }
+
+        .certification h3 {
+            font-size: 16px;
+
+            margin-bottom: 7px;
+        }
+
+        .certification p {
+            color:
+                var(--muted);
+
+            font-size: 14px;
+        }
+
+
+        /* =========================================
+           ACHIEVEMENTS
+        ========================================= */
+
+        .achievements {
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    auto-fit,
+                    minmax(280px, 1fr)
+                );
+
+            gap: 18px;
+        }
+
+        .achievement {
+            background:
+                linear-gradient(
+                    145deg,
+                    #101827,
+                    #0d1422
+                );
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 12px;
+
+            padding: 25px;
+        }
+
+        .achievement-number {
+            color:
+                var(--primary-light);
+
+            font-size: 12px;
+
+            font-weight: 800;
+
+            margin-bottom: 10px;
+        }
+
+        .achievement h3 {
+            font-size: 16px;
+
+            margin-bottom: 8px;
+        }
+
+        .achievement p {
+            color:
+                var(--muted);
+
+            font-size: 14px;
+        }
+
+
+        /* =========================================
            CONTACT
-        ========================= */
+        ========================================= */
 
-        .contact {
-
+        .contact-box {
             background:
                 linear-gradient(
                     135deg,
@@ -966,77 +835,92 @@
             border:
                 1px solid var(--border);
 
-            border-radius:
-                20px;
+            border-radius: 20px;
 
             padding:
                 65px 30px;
 
-            text-align:
-                center;
+            text-align: center;
         }
 
-        .contact h2 {
-
+        .contact-box h2 {
             font-size:
                 clamp(30px, 5vw, 42px);
 
-            margin-bottom:
-                15px;
+            margin-bottom: 15px;
         }
 
-        .contact p {
+        .contact-box > p {
+            color: var(--muted);
 
-            color:
-                var(--muted);
-
-            max-width:
-                650px;
+            max-width: 700px;
 
             margin:
                 0 auto 30px;
         }
 
-        .socials {
+        .contact-details {
+            display: flex;
 
-            display:
-                flex;
+            justify-content: center;
 
-            justify-content:
-                center;
+            flex-wrap: wrap;
 
-            flex-wrap:
-                wrap;
+            gap: 12px;
 
-            gap:
-                12px;
+            margin-bottom: 25px;
+        }
+
+        .contact-item {
+            padding:
+                11px 17px;
+
+            background:
+                rgba(255,255,255,0.03);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 7px;
+
+            color:
+                var(--text-secondary);
+
+            font-size: 14px;
+        }
+
+        .social-links {
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
         }
 
         .social {
-
             padding:
                 11px 18px;
 
             border:
                 1px solid var(--border);
 
-            border-radius:
-                7px;
+            border-radius: 7px;
 
             color:
-                #cbd5e1;
+                var(--text-secondary);
 
-            font-size:
-                14px;
+            font-size: 14px;
 
-            transition:
-                0.3s ease;
+            font-weight: 600;
+
+            transition: 0.3s ease;
         }
 
         .social:hover {
-
             color:
-                var(--blue-light);
+                var(--primary-light);
 
             border-color:
                 rgba(96,165,250,0.4);
@@ -1046,92 +930,79 @@
         }
 
 
-        /* =========================
+        /* =========================================
            FOOTER
-        ========================= */
+        ========================================= */
 
         footer {
-
             border-top:
                 1px solid var(--border);
 
             padding:
                 30px 25px;
 
-            text-align:
-                center;
+            text-align: center;
 
             color:
                 var(--muted);
 
-            font-size:
-                13px;
+            font-size: 13px;
         }
 
         footer span {
-
             color:
-                var(--blue-light);
+                var(--primary-light);
         }
 
 
-        /* =========================
+        /* =========================================
            MOBILE
-        ========================= */
+        ========================================= */
 
         @media (max-width: 800px) {
 
             .nav-links {
-                display:
-                    none;
+                display: none;
             }
 
             .about-grid {
+                grid-template-columns: 1fr;
 
-                grid-template-columns:
-                    1fr;
-
-                gap:
-                    35px;
+                gap: 35px;
             }
 
             .hero h1 {
-
-                letter-spacing:
-                    -2px;
+                letter-spacing: -2px;
             }
         }
+
 
         @media (max-width: 500px) {
 
             section {
-
                 padding:
                     75px 20px;
             }
 
             .hero {
-
                 padding:
                     120px 20px 70px;
             }
 
-            .hero-text {
-
-                font-size:
-                    16px;
+            .hero-description {
+                font-size: 16px;
             }
 
-            .buttons {
-
-                width:
-                    100%;
+            .hero-buttons {
+                width: 100%;
             }
 
-            .btn {
+            .button {
+                width: 100%;
+            }
 
-                width:
-                    100%;
+            .contact-details {
+                flex-direction: column;
             }
         }
 
@@ -1143,13 +1014,13 @@
 <body>
 
 
-<!-- =========================
+<!-- =========================================
      NAVIGATION
-========================== -->
+========================================== -->
 
 <nav>
 
-    <div class="nav">
+    <div class="nav-container">
 
         <a href="#home" class="logo">
             Rishika<span>.</span>
@@ -1174,6 +1045,12 @@
             </li>
 
             <li>
+                <a href="#certifications">
+                    Certifications
+                </a>
+            </li>
+
+            <li>
                 <a href="#contact">Contact</a>
             </li>
 
@@ -1185,9 +1062,9 @@
 
 
 
-<!-- =========================
+<!-- =========================================
      HERO
-========================== -->
+========================================== -->
 
 <section class="hero" id="home">
 
@@ -1195,9 +1072,9 @@
 
         <div class="hero-content">
 
-            <div class="badge">
+            <div class="availability">
 
-                <span class="dot"></span>
+                <span class="status-dot"></span>
 
                 Open to Internship Opportunities
 
@@ -1207,10 +1084,7 @@
             <h1>
 
                 Hi, I'm
-
-                <span>
-                    Rishika R Poojary.
-                </span>
+                <span>Rishika R Poojary.</span>
 
             </h1>
 
@@ -1222,31 +1096,41 @@
             </h2>
 
 
-            <p class="hero-text">
+            <p class="hero-description">
 
-                I am a Computer Science Engineering student
-                passionate about technology, software development,
-                and building practical solutions. I enjoy learning
-                through projects and continuously improving my
-                technical skills.
+                Computer Science Engineering undergraduate with
+                hands-on experience in Python, Flask, HTML, CSS,
+                JavaScript, and MySQL. I enjoy building
+                database-driven web applications and practical
+                technology solutions.
 
             </p>
 
 
-            <div class="buttons">
+            <div class="hero-buttons">
 
                 <a
                     href="#projects"
-                    class="btn primary">
+                    class="button primary-button">
 
-                    View Projects →
+                    View My Projects →
+
+                </a>
+
+
+                <a
+                    href="resume.pdf"
+                    class="button secondary-button"
+                    target="_blank">
+
+                    Download Resume
 
                 </a>
 
 
                 <a
                     href="#contact"
-                    class="btn secondary">
+                    class="button secondary-button">
 
                     Contact Me
 
@@ -1262,9 +1146,9 @@
 
 
 
-<!-- =========================
+<!-- =========================================
      ABOUT
-========================== -->
+========================================== -->
 
 <section id="about">
 
@@ -1277,12 +1161,11 @@
             </div>
 
             <h2>
-                Turning learning into practical work.
+                Building skills through practical projects.
             </h2>
 
             <p>
-                A brief introduction about my academic journey
-                and current goals.
+                My background, interests, and current career focus.
             </p>
 
         </div>
@@ -1295,20 +1178,30 @@
 
                 <p>
 
-                    I am a Computer Science Engineering student
-                    interested in software development and
-                    technology.
+                    I am a Computer Science Engineering
+                    undergraduate with hands-on experience in
+                    Python, Flask, HTML, CSS, JavaScript, and
+                    MySQL.
 
                 </p>
 
 
                 <p>
 
-                    I believe in learning by building. Through
-                    academic and personal projects, I have been
-                    developing my understanding of programming,
-                    web technologies, databases, and software
-                    development.
+                    I have worked on web applications,
+                    database-driven systems, CRUD operations,
+                    database connectivity, data validation,
+                    debugging, and testing.
+
+                </p>
+
+
+                <p>
+
+                    I am interested in web development and
+                    application development, and I enjoy
+                    learning new technologies through practical
+                    projects.
 
                 </p>
 
@@ -1316,20 +1209,33 @@
                 <p>
 
                     I am currently looking for internship
-                    opportunities where I can gain practical
-                    industry experience, learn from experienced
-                    professionals, and contribute to real-world
-                    projects.
+                    opportunities where I can apply my technical
+                    knowledge, gain industry experience, work
+                    with experienced teams, and contribute to
+                    meaningful projects.
 
                 </p>
 
             </div>
 
 
-            <div class="info-card">
+            <div class="profile-card">
 
 
-                <div class="info">
+                <div class="profile-item">
+
+                    <small>
+                        Location
+                    </small>
+
+                    <strong>
+                        Udupi, Karnataka
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-item">
 
                     <small>
                         Degree
@@ -1342,7 +1248,7 @@
                 </div>
 
 
-                <div class="info">
+                <div class="profile-item">
 
                     <small>
                         Specialization
@@ -1355,7 +1261,7 @@
                 </div>
 
 
-                <div class="info">
+                <div class="profile-item">
 
                     <small>
                         Graduation
@@ -1368,14 +1274,14 @@
                 </div>
 
 
-                <div class="info">
+                <div class="profile-item">
 
                     <small>
-                        Current Focus
+                        CGPA
                     </small>
 
                     <strong>
-                        Software & Technology
+                        8.6 / 10
                     </strong>
 
                 </div>
@@ -1391,9 +1297,9 @@
 
 
 
-<!-- =========================
+<!-- =========================================
      SKILLS
-========================== -->
+========================================== -->
 
 <section id="skills">
 
@@ -1402,142 +1308,117 @@
         <div class="section-header">
 
             <div class="section-label">
-                Skills
+                Technical Skills
             </div>
 
             <h2>
-                Technologies I work with.
+                Technologies & capabilities.
             </h2>
 
             <p>
-
-                Technologies and tools I have worked with
-                through projects and academic learning.
-
+                Technologies and development areas included
+                in my academic and project experience.
             </p>
 
         </div>
 
 
-        <div class="skills">
+        <div class="skill-category">
 
+            <h3>
+                Programming Languages
+            </h3>
 
-            <div class="skill">
+            <div class="skills">
 
-                <div class="skill-title">
-                    Python
-                </div>
-
-                <span class="skill-type">
-                    Programming
-                </span>
-
-            </div>
-
-
-            <div class="skill">
-
-                <div class="skill-title">
-                    Java
-                </div>
-
-                <span class="skill-type">
-                    Programming
-                </span>
+                <span class="skill">Python</span>
+                <span class="skill">Java</span>
+                <span class="skill">C</span>
+                <span class="skill">JavaScript</span>
 
             </div>
 
-
-            <div class="skill">
-
-                <div class="skill-title">
-                    C
-                </div>
-
-                <span class="skill-type">
-                    Programming
-                </span>
-
-            </div>
+        </div>
 
 
-            <div class="skill">
+        <div class="skill-category">
 
-                <div class="skill-title">
-                    HTML
-                </div>
+            <h3>
+                Web Technologies
+            </h3>
 
-                <span class="skill-type">
-                    Web Development
-                </span>
+            <div class="skills">
+
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">Flask</span>
+                <span class="skill">React.js</span>
+                <span class="skill">REST APIs</span>
 
             </div>
 
-
-            <div class="skill">
-
-                <div class="skill-title">
-                    CSS
-                </div>
-
-                <span class="skill-type">
-                    Web Development
-                </span>
-
-            </div>
+        </div>
 
 
-            <div class="skill">
+        <div class="skill-category">
 
-                <div class="skill-title">
-                    JavaScript
-                </div>
+            <h3>
+                Backend & Database
+            </h3>
 
-                <span class="skill-type">
-                    Web Development
-                </span>
+            <div class="skills">
+
+                <span class="skill">Flask</span>
+                <span class="skill">REST APIs</span>
+                <span class="skill">MySQL</span>
+                <span class="skill">SQL</span>
+                <span class="skill">CRUD Operations</span>
+                <span class="skill">Database Connectivity</span>
+                <span class="skill">Data Validation</span>
 
             </div>
 
-
-            <div class="skill">
-
-                <div class="skill-title">
-                    MySQL
-                </div>
-
-                <span class="skill-type">
-                    Database
-                </span>
-
-            </div>
+        </div>
 
 
-            <div class="skill">
+        <div class="skill-category">
 
-                <div class="skill-title">
-                    Git & GitHub
-                </div>
+            <h3>
+                Development & Core CS
+            </h3>
 
-                <span class="skill-type">
-                    Developer Tools
-                </span>
+            <div class="skills">
+
+                <span class="skill">Data Structures & Algorithms</span>
+                <span class="skill">Object-Oriented Programming</span>
+                <span class="skill">Database Management Systems</span>
+                <span class="skill">Operating Systems</span>
+                <span class="skill">Computer Networks</span>
+                <span class="skill">Debugging</span>
+                <span class="skill">Testing</span>
+                <span class="skill">Error Handling</span>
+                <span class="skill">SDLC</span>
 
             </div>
 
+        </div>
 
-            <div class="skill">
 
-                <div class="skill-title">
-                    DevOps
-                </div>
+        <div class="skill-category">
 
-                <span class="skill-type">
-                    Technology
-                </span>
+            <h3>
+                Development Tools
+            </h3>
+
+            <div class="skills">
+
+                <span class="skill">VS Code</span>
+                <span class="skill">Eclipse</span>
+                <span class="skill">Git</span>
+                <span class="skill">GitHub</span>
 
             </div>
-
 
         </div>
 
@@ -1547,9 +1428,9 @@
 
 
 
-<!-- =========================
+<!-- =========================================
      PROJECTS
-========================== -->
+========================================== -->
 
 <section id="projects">
 
@@ -1562,14 +1443,12 @@
             </div>
 
             <h2>
-                Selected work.
+                Selected projects.
             </h2>
 
             <p>
-
-                Some of the projects I have worked on while
-                developing my technical and problem-solving skills.
-
+                Practical applications developed through academic
+                and personal project work.
             </p>
 
         </div>
@@ -1582,28 +1461,36 @@
 
             <div class="project">
 
-                <div class="project-number">
-                    PROJECT 01
+                <div class="project-year">
+                    2026
                 </div>
 
                 <h3>
-                    Employee Attendance & Salary System
+                    Life Admin – Event Reminder
+                    Web Application
                 </h3>
 
                 <p>
 
-                    A software application designed to manage
-                    employee attendance and salary-related
-                    information.
+                    Developed a web application for managing
+                    personal events and reminders. Implemented
+                    features to add, edit, and delete events,
+                    display countdowns for upcoming events, and
+                    provide email or popup reminders.
+
+                    Integrated MySQL for storing event
+                    information and created user-friendly
+                    interfaces for managing reminders.
 
                 </p>
 
-
                 <div class="tags">
 
-                    <span class="tag">
-                        Python
-                    </span>
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">PHP</span>
+                    <span class="tag">MySQL</span>
 
                 </div>
 
@@ -1615,28 +1502,33 @@
 
             <div class="project">
 
-                <div class="project-number">
-                    PROJECT 02
+                <div class="project-year">
+                    2024
                 </div>
 
                 <h3>
-                    Online Auction System
+                    Student Management System
                 </h3>
 
                 <p>
 
-                    A web-based application designed to support
-                    online auction activities and bidding
-                    functionality.
+                    Developed a web application for managing
+                    student records efficiently.
+
+                    Implemented database connectivity, SQL
+                    queries, CRUD operations, data validation,
+                    error handling, responsive interfaces,
+                    testing, debugging, and troubleshooting.
 
                 </p>
 
-
                 <div class="tags">
 
-                    <span class="tag">
-                        JavaScript
-                    </span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Flask</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">CRUD</span>
 
                 </div>
 
@@ -1648,27 +1540,76 @@
 
             <div class="project">
 
-                <div class="project-number">
-                    PROJECT 03
+                <div class="project-year">
+                    2025
                 </div>
 
                 <h3>
-                    More Projects
+                    Department No-Due Clearance System
                 </h3>
 
                 <p>
 
-                    Additional academic and personal projects
-                    will be added as the portfolio grows.
+                    Developed a role-based web application to
+                    automate the no-due verification process for
+                    the Computer Science and Engineering
+                    Department.
+
+                    Implemented authentication, database
+                    integration, CRUD operations, data
+                    validation, attendance management,
+                    eligibility verification, debugging,
+                    and certificate generation.
 
                 </p>
 
+                <div class="tags">
+
+                    <span class="tag">Python</span>
+                    <span class="tag">Flask</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">Authentication</span>
+                    <span class="tag">CRUD</span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PROJECT 4 -->
+
+            <div class="project">
+
+                <div class="project-year">
+                    2026
+                </div>
+
+                <h3>
+                    IoT-Enabled Intelligent Vehicular
+                    Emission Monitoring System
+                </h3>
+
+                <p>
+
+                    Developed an IoT-based monitoring application
+                    using ESP32, sensors, and GPS to collect
+                    real-time vehicular emission data.
+
+                    Integrated ThingSpeak for cloud-based
+                    monitoring and implemented automated alerts
+                    for abnormal emission levels.
+
+                </p>
 
                 <div class="tags">
 
-                    <span class="tag">
-                        Coming Soon
-                    </span>
+                    <span class="tag">ESP32</span>
+                    <span class="tag">Sensors</span>
+                    <span class="tag">GPS</span>
+                    <span class="tag">ThingSpeak</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">IoT</span>
 
                 </div>
 
@@ -1683,9 +1624,9 @@
 
 
 
-<!-- =========================
+<!-- =========================================
      EDUCATION
-========================== -->
+========================================== -->
 
 <section id="education">
 
@@ -1698,7 +1639,7 @@
             </div>
 
             <h2>
-                Academic Journey.
+                Academic journey.
             </h2>
 
         </div>
@@ -1707,10 +1648,12 @@
         <div class="timeline">
 
 
+            <!-- BE -->
+
             <div class="education-card">
 
                 <div class="education-date">
-                    2023 — 2027
+                    2023 – Present
                 </div>
 
                 <h3>
@@ -1722,7 +1665,60 @@
                 </p>
 
                 <p>
-                    Add your college name here.
+                    Alva’s Institute of Engineering and Technology,
+                    Mangalore — VTU
+                </p>
+
+                <p>
+                    CGPA: 8.6 / 10
+                </p>
+
+            </div>
+
+
+            <!-- PUC -->
+
+            <div class="education-card">
+
+                <div class="education-date">
+                    2021 – 2023
+                </div>
+
+                <h3>
+                    PUC / 12th
+                </h3>
+
+                <p>
+                    PoornaPrajna Pre-University College,
+                    Udupi
+                </p>
+
+                <p>
+                    KSEAB · Percentage: 84%
+                </p>
+
+            </div>
+
+
+            <!-- SSLC -->
+
+            <div class="education-card">
+
+                <div class="education-date">
+                    2020 – 2021
+                </div>
+
+                <h3>
+                    SSLC / 10th
+                </h3>
+
+                <p>
+                    G M Vidyaniketan Public School,
+                    Brahmavar
+                </p>
+
+                <p>
+                    CBSE
                 </p>
 
             </div>
@@ -1736,15 +1732,192 @@
 
 
 
-<!-- =========================
+<!-- =========================================
+     CERTIFICATIONS
+========================================== -->
+
+<section id="certifications">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                Certifications
+            </div>
+
+            <h2>
+                Learning & certifications.
+            </h2>
+
+            <p>
+                Certifications completed as part of my
+                continuous technical learning.
+            </p>
+
+        </div>
+
+
+        <div class="certifications">
+
+
+            <div class="certification">
+
+                <div class="certification-icon">
+                    🧠
+                </div>
+
+                <h3>
+                    Data Structures and Algorithms
+                    using Java
+                </h3>
+
+                <p>
+                    Infosys Springboard
+                </p>
+
+            </div>
+
+
+            <div class="certification">
+
+                <div class="certification-icon">
+                    🗄️
+                </div>
+
+                <h3>
+                    Database Management System
+                </h3>
+
+                <p>
+                    Infosys Springboard
+                </p>
+
+            </div>
+
+
+            <div class="certification">
+
+                <div class="certification-icon">
+                    ⚙️
+                </div>
+
+                <h3>
+                    Software Engineering and Agile
+                    Software Development
+                </h3>
+
+                <p>
+                    Coursera
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     ACHIEVEMENTS
+========================================== -->
+
+<section id="achievements">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                Achievements
+            </div>
+
+            <h2>
+                Competitions & activities.
+            </h2>
+
+        </div>
+
+
+        <div class="achievements">
+
+
+            <div class="achievement">
+
+                <div class="achievement-number">
+                    ACHIEVEMENT 01
+                </div>
+
+                <h3>
+                    Third Place – Web Wizards
+                </h3>
+
+                <p>
+                    Won third place in a Website Building
+                    Competition in 2024.
+                </p>
+
+            </div>
+
+
+            <div class="achievement">
+
+                <div class="achievement-number">
+                    ACHIEVEMENT 02
+                </div>
+
+                <h3>
+                    AARAMBH 2025
+                </h3>
+
+                <p>
+                    Participated in the National Level Ideathon
+                    at NITK in 2025.
+                </p>
+
+            </div>
+
+
+            <div class="achievement">
+
+                <div class="achievement-number">
+                    ACHIEVEMENT 03
+                </div>
+
+                <h3>
+                    BuildWithAI Innovation Hackathon
+                </h3>
+
+                <p>
+                    Participated in the International Level
+                    Hackathon at Presidency University,
+                    Bengaluru in 2026.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
      CONTACT
-========================== -->
+========================================== -->
 
 <section id="contact">
 
     <div class="container">
 
-        <div class="contact">
+        <div class="contact-box">
 
             <div class="section-label">
                 Contact
@@ -1758,21 +1931,52 @@
 
             <p>
 
-                I am currently looking for internship opportunities
-                where I can learn, contribute, and gain practical
-                industry experience.
+                I am currently looking for internship
+                opportunities where I can apply my technical
+                skills, gain practical industry experience,
+                and contribute to meaningful projects.
 
             </p>
 
 
-            <div class="socials">
+            <div class="contact-details">
+
+
+                <div class="contact-item">
+
+                    📧
+                    poojaryrishika01@gmail.com
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    📱
+                    +91-7795284980
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    📍
+                    Udupi, Karnataka
+
+                </div>
+
+
+            </div>
+
+
+            <div class="social-links">
 
 
                 <a
                     class="social"
                     href="mailto:poojaryrishika01@gmail.com">
 
-                    ✉ Email
+                    Email
 
                 </a>
 
@@ -1780,7 +1984,8 @@
                 <a
                     class="social"
                     href="https://www.linkedin.com/in/rishika-r-poojary-89b985330/"
-                    target="_blank">
+                    target="_blank"
+                    rel="noopener">
 
                     LinkedIn ↗
 
@@ -1790,7 +1995,8 @@
                 <a
                     class="social"
                     href="https://github.com/Rishika010305"
-                    target="_blank">
+                    target="_blank"
+                    rel="noopener">
 
                     GitHub ↗
 
@@ -1807,9 +2013,9 @@
 
 
 
-<!-- =========================
+<!-- =========================================
      FOOTER
-========================== -->
+========================================== -->
 
 <footer>
 
